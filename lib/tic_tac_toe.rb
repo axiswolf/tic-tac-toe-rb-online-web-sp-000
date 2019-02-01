@@ -38,11 +38,13 @@ def input_to_index(input)
 end
 ###############################################################################
 def valid_move?(board, index)
-  if index.between?(0,8)
-    if !position_taken?(board, index)
-      true
-    end
-  end
+  #if index.between?(0,8)
+    #if !position_taken?(board, index)
+      #true
+    #end
+  #end
+#end
+  index.between?(0,8) && !position_taken?(board,index) #if the index is between 0-8 and not taken == true
 end
 ################################################################################
 def turn(board)
