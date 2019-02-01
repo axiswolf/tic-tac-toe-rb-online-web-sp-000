@@ -54,6 +54,7 @@ def turn(board)
     display_board(board)
   else
     turn(board)
+    puts "Enter a valid move"
     input = gets.strip
     index = input_to_index(input)
   end
