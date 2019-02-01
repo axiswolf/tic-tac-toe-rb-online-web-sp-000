@@ -26,7 +26,7 @@ def current_player(board)
   else
     current_player = "O"
   end
-  return player
+  return current_player
 end
 ###############################################################################
 def move(board, index, current_player)
