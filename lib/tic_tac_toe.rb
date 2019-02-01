@@ -7,13 +7,13 @@ def display_board(board)
 end
 ######################################################
 def turn_count(board)
-  turn = 0
+  turns = 0
   board.each do |token|
     if token == "X" || token == "O"
-      turn += 1
+      turns += 1
     end
   end
-  return turn
+  return turns
 end
 ###############################################################################
 def position_taken?(board, index)
